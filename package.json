@@ -1,0 +1,34 @@
+{
+  "name": "businesscard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@types/node": "20.2.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@types/react-scroll": "^1.8.5",
+    "classnames": "^2.3.2",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "framer-motion": "^7.6.19",
+    "gsap": "^3.11.3",
+    "next": "13.4.2",
+    "nextjs-progressbar": "0.0.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-scroll": "^1.8.8",
+    "react-spinners": "^0.13.7",
+    "react-toastify": "^9.1.3",
+    "sass": "^1.56.2",
+    "typescript": "5.0.4"
+  }
+}

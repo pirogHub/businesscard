@@ -1,0 +1,187 @@
+.about::after {
+
+    -webkit-filter: blur(70px);
+    -moz-filter: blur(70px);
+    -o-filter: blur(70px);
+    -ms-filter: blur(70px);
+    filter: blur(70px);
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* height: 100%; */
+    opacity: 0.6;
+    height: 880px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/hero_bg.jpg");
+    z-index: -1;
+
+
+}
+
+.about {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 70px;
+
+    width: 100%;
+    height: 880px;
+
+    @media all and (max-width:1080px) {
+        padding-top: 86px;
+    }
+
+    @media all and (max-width:800px) {
+        padding-top: 230px;
+        padding-bottom: 44px;
+    }
+
+    @media all and (max-width:630px) {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    @media all and (max-width:485px) {
+        padding-top: 0px;
+        padding-bottom: 22px;
+        height: 800px;
+    }
+
+    @media all and (max-width:400px) {
+        padding-top: 0px;
+        padding-bottom: 22px;
+        height: 700px;
+    }
+
+
+
+    &__sub_container {
+        padding-top: 56px;
+        display: flex;
+        align-items: flex-start;
+
+        @media all and (max-width:1080px) {
+            padding-top: 40px;
+            padding-bottom: 26px;
+        }
+
+        @media all and (max-width:800px) {
+            padding-top: 6px;
+            padding-bottom: 18px;
+        }
+
+        @media all and (max-width:630px) {
+            flex-direction: column;
+            /* height: 500px; */
+        }
+
+        @media all and (max-width:485px) {
+            padding-top: 0px;
+            padding-bottom: 22px;
+        }
+    }
+
+    &__img {
+        margin-right: 32px;
+        width: 48%;
+
+        @media all and (max-width:1080px) {
+            margin-right: 26px;
+        }
+
+        @media all and (max-width:800px) {
+            margin-right: 15px;
+        }
+
+        @media all and (max-width:630px) {
+            /* max-width: 90%; */
+            width: 60%;
+            /* aspect-ratio: 1 / 1; */
+            margin: auto;
+            margin-top: 0;
+
+            margin-bottom: 24px;
+        }
+
+        @media all and (max-width:485px) {
+            width: 90%;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 12px;
+        font-family: "Raleway";
+        font-weight: 600;
+        font-size: 36px;
+        color: #f2f2f2;
+
+        @media all and (max-width:1080px) {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        @media all and (max-width:800px) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        &__border {
+            padding-top: 17px;
+            position: relative;
+            display: block;
+            height: 60px;
+
+            @media all and (max-width:800px) {
+                padding-top: 10px;
+                height: auto;
+            }
+
+            &__arrow {
+                position: absolute;
+                top: -12px;
+                left: -20px;
+
+                @media all and (max-width:800px) {
+                    top: -9px;
+                    left: -17px;
+                }
+            }
+
+            &__line {
+                display: block;
+                height: 2px;
+                background: linear-gradient(89.99deg, #00ff37c8 0%, rgba(255, 34, 141, 0) 100%);
+
+            }
+        }
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 54px;
+        max-width: 512px;
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #f2f2f2;
+
+        @media all and (max-width:1080px) {
+            font-size: 17px;
+        }
+
+        @media all and (max-width:800px) {
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        @media all and (max-width:630px) {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.skills {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: #00000098;
+
+    @media all and (max-width: 1080px) {
+        padding-top: 48px;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 52px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 70px;
+        grid-template-areas:
+            "one two"
+            "three three";
+
+        @media all and (max-width: 1080px) {
+            padding-top: 48px;
+        }
+
+        @media all and (max-width: 800px) {
+            padding-top: 12px;
+        }
+
+        & :nth-child(1) {
+            grid-area: one;
+        }
+
+        & :nth-child(2) {
+            grid-area: two;
+        }
+
+        & :nth-child(3) {
+            & h3 {
+                text-align: center;
+
+                @media all and (max-width: 620px) {
+                    text-align: start;
+                }
+            }
+
+            grid-area: three;
+            justify-self: center;
+            justify-items: stretch;
+        }
+
+        @media all and (max-width: 620px) {
+            display: block;
+        }
+
+        @media all and (max-width: 485px) {
+            padding-top: 14px;
+        }
+    }
+
+    &__item {
+        @media all and (max-width: 620px) {
+            margin-bottom: 24px;
+        }
+
+        @media all and (max-width: 485px) {
+            margin-bottom: 53px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        background-repeat: no-repeat;
+        font-family: "Raleway";
+        font-weight: 600;
+        font-size: 22px;
+        color: #f2f2f2;
+
+        @media all and (max-width: 1080px) {
+            margin-bottom: 18px;
+        }
+
+        @media all and (max-width: 800px) {
+            font-size: 18px;
+        }
+
+        &__icon {
+            display: inline-block;
+            transform: translateY(15%);
+        }
+
+        &__text {
+            padding-left: 10px;
+        }
+
+        &__border {
+            max-width: 248px;
+            margin-top: 10px;
+            display: block;
+            height: 2px;
+            background: linear-gradient(89.99deg, #00ff37c8 0%, rgba(255, 34, 141, 0) 100%);
+
+            @media all and (max-width: 1080px) {
+                margin-top: 7px;
+            }
+
+            @media all and (max-width: 800px) {
+                margin-top: 5px;
+            }
+        }
+
+
+    }
+
+    &__text {
+        margin: 0;
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #bdbdbd;
+
+        @media all and (max-width: 485px) {
+            line-height: 22px;
+        }
+    }
+}

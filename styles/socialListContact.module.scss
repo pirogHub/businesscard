@@ -1,0 +1,123 @@
+.social__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @media all and (max-width:1080px) {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    @media all and (max-width:630px) {
+        display: block;
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+
+            @media all and (max-width:1080px) {
+                margin-bottom: 0;
+            }
+
+            @media all and (max-width:630px) {
+                margin-bottom: 5px;
+            }
+
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px;
+            font-family: "Lato";
+            font-weight: 600;
+            font-size: 20px;
+            text-decoration-line: underline;
+            color: #6ec081c2;
+
+            @media all and (max-width:800px) {
+                font-size: 18px;
+                width: 130px;
+            }
+
+            &:hover {
+                background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #76bb07c4 0%, #309e08 43.75%, #08e46bc4 68.37%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+
+            }
+
+            &:hover &__icon svg {
+                transition: color .3s ease-in-out;
+                /* color: #288ec1; */
+            }
+
+            &:hover &__icon_hover_blue svg {
+                color: #288ec1;
+
+            }
+
+            &:hover &__icon_hover_green svg {
+                color: #21d517;
+
+            }
+
+
+            &__icon {
+                position: relative;
+                display: inline-block;
+                /* border: 2px solid rgba(255, 255, 255, .5); */
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                transition: background-color .3s ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &>* {
+
+                    padding: 0;
+                    border-radius: 50%;
+                    height: 40px;
+                    width: 40px;
+                    transition: background-color .3s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    width: 40px;
+                }
+
+
+
+
+                &__img {
+                    /* position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1; */
+                }
+
+                &__text {
+                    margin-right: 26px;
+                }
+            }
+        }
+    }
+}
+
+.hover_green {
+    /* color: #f00 */
+}
+
+.hover_blue {}
