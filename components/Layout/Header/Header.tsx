@@ -105,17 +105,17 @@ const Header: FC = () => {
 						/>
 						<ItemWithLink
 							className={currentMenuItemClass}
-							to="/about"
+							to="/skills"
 							title="Навыки"
 						/>
 						<ItemWithLink
 							className={currentMenuItemClass}
-							to="/about"
+							to="/portfolio"
 							title="Портфолио"
 						/>
 						<ItemWithLink
 							className={currentMenuItemClass}
-							to="/about"
+							to="/contact"
 							title="Обратная связь"
 						/>
 					</ul>
