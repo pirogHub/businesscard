@@ -16,8 +16,8 @@ const About = () => {
 				<img
 					className={styles.about__img}
 					alt="avatar"
-					src="/img/about.png"
-				/>
+					src="img/photo-good.jpg"
+				/> 
 				<div className={styles.about__inner}>
 					<h3 className={styles.about__title}>
 						Егор Иванов
@@ -35,9 +35,13 @@ const About = () => {
 					</h3>
 
 					<p className={styles.about__text}>
-						Lorem ipsum, dolor sit amet consectetur adipisicing
-						elit. Non autem, inventore vero dolore officiis enim
-						adipisci cum perferendis quod numquam!
+						Люблю программировать больше чем есть.<br/>
+						Образование: законченное высшее. Факультет радиотехнологий связи.<br/> 
+						СПб ГУТ им. проф. М.А. Бонч-Бруевича<br/>
+						<br/>
+						25 лет. Готов работать для вас.<br/>
+						Готов к командировкам/переездам.<br/>
+						Готов к нестандартным проектам.
 					</p>
 					{!isMobile1080 && <SocialList />}
 				</div>

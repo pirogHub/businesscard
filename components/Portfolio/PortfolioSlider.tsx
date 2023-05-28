@@ -3,6 +3,8 @@ import {Carousel} from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import PortfolioSliderItem from "./PortfolioSliderItem"
 import {useMediaQuery} from "../../hooks/index"
+import PortfolioTabItem from "./PortfolioTabItem"
+import { IDescriptionItem } from "./types"
 
 interface IPortfolioSlider {
 	tabItems: {
@@ -10,6 +12,8 @@ interface IPortfolioSlider {
 		img: string
 		link: string
 		title: string
+		lang?: string
+	description?: IDescriptionItem[]
 	}[]
 }
 
@@ -37,8 +41,10 @@ const PortfolioSlider = ({tabItems}: IPortfolioSlider) => {
 					<PortfolioSliderItem
 						key={item.id}
 						title={item.title}
-						imgSrc={item.img}
-						link={item.link}
+							imgSrc={item.img}
+							link={item.link}
+							description={item?.description}
+							lang={item?.lang}
 					/>
 				))}
 			</Carousel>

@@ -1,5 +1,7 @@
+import cn from "classnames"
+import styles from "../../styles/otherPages.module.scss"
 const PolicyContent = () => (
-	<div className="container" style={{paddingTop: 70}}>
+	<div className={cn("container", styles.otherPageContainer)} style={{paddingTop: 70}}>
 		<h1>Пользовательское соглашение</h1>
 		<p>
 			Настоящий документ &quot;Пользовательское соглашение&quot;

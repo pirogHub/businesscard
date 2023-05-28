@@ -18,8 +18,10 @@ const Skills = () => {
 								<MaterialIcon name="MdImportantDevices" />
 							}
 						>
-							Typescript, NextJs, JavaScript, React, Redux <br />
-							RTK Query, Intersection Observer, lodash
+							Typescript, NextJs, JavaScript, React <br />
+							 Redux,  
+							RTK Query, Effector
+							<br /> Intersection Observer, lodash
 							<br />
 							Bootstrap
 							<br />
@@ -30,7 +32,7 @@ const Skills = () => {
 							iconClass={styles.skills__icon_back}
 							IconComponent={<MaterialIcon name="MdBackup" />}
 						>
-							REST Api, Cors, MongoDb, NestJs, NodeJs, Express
+							REST Api, Cors, MongoDb, MySql, NestJs, NodeJs, Express
 						</SkillItem>
 
 						<SkillItem

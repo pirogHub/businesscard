@@ -15,7 +15,7 @@ const Item = ({
 }) => {
 	return (
 		<li className={styles.social__list__item}>
-			<a href="#" className={styles.social__list__item__link}>
+			<a href="tel:+79217641998" className={styles.social__list__item__link}>
 				<span className={styles.social__list__item__link__text}>
 					{title}
 				</span>

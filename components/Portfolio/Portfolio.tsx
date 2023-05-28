@@ -2,82 +2,34 @@ import {useState} from "react"
 import {AnimatePresence} from "framer-motion"
 import MainTitle from "../MainTitle/MainTitle"
 import PortfolioTabControl from "./PortfolioTabControl"
-import PortfolioTabContent, {IPortfolioTabContent} from "./PortfolioTabContent"
+import PortfolioTabContent from "./PortfolioTabContent"
 import {useMediaQuery} from "../../hooks/index"
 
 import styles from "../../styles/portfolio.module.scss"
-import {
-	hiddenPortfolioItemsArray,
-	portfolioItems1,
-	portfolioItems2,
-	portfolioItems3,
-	portfolioItems4,
-} from "./PortfolioContent"
+
 import PortfolioSlider from "./PortfolioSlider"
+import { portfolioItems1 } from "./PortfolioContent"
 
 const Portfolio = () => {
 	const isMobile = useMediaQuery(1080)
-	const [portfolioTab1, setPortfolioTab1] = useState(true)
-	const [portfolioTab2, setPortfolioTab2] = useState(false)
-	const [portfolioTab3, setPortfolioTab3] = useState(false)
-	const [portfolioTab4, setPortfolioTab4] = useState(false)
+	const [portfolioTab, setPortfolioTab] = useState(true)
 	const [hiddenPortfolioItems, setHiddenPortfolioItems] = useState(false)
 
 	const toggleHiddenPortfolioItems = () =>
 		setHiddenPortfolioItems(!hiddenPortfolioItems)
 
 	const handleShowPortfolioItems1 = () => {
-		setPortfolioTab1(true)
-		setPortfolioTab2(false)
-		setPortfolioTab3(false)
-		setPortfolioTab4(false)
+		setPortfolioTab(true)
+	
 	}
 
-	const handleShowPortfolioItems2 = () => {
-		setPortfolioTab1(false)
-		setPortfolioTab2(true)
-		setPortfolioTab3(false)
-		setPortfolioTab4(false)
-	}
-
-	const handleShowPortfolioItems3 = () => {
-		setPortfolioTab1(false)
-		setPortfolioTab2(false)
-		setPortfolioTab3(true)
-		setPortfolioTab4(false)
-	}
-
-	const handleShowPortfolioItems4 = () => {
-		setPortfolioTab1(false)
-		setPortfolioTab2(false)
-		setPortfolioTab3(false)
-		setPortfolioTab4(true)
-	}
-
+	
 	const portfolioTabControls = [
 		{
 			id: 1,
-			title: "Веб-сайты",
-			isActive: portfolioTab1,
+			title: "FullStack",
+			isActive: portfolioTab,
 			handler: handleShowPortfolioItems1,
-		},
-		{
-			id: 2,
-			title: "UI/UX дизайн",
-			isActive: portfolioTab2,
-			handler: handleShowPortfolioItems2,
-		},
-		{
-			id: 3,
-			title: "Внешний интерфейс",
-			isActive: portfolioTab3,
-			handler: handleShowPortfolioItems3,
-		},
-		{
-			id: 4,
-			title: "Все проекты",
-			isActive: portfolioTab4,
-			handler: handleShowPortfolioItems4,
 		},
 	]
 
@@ -99,12 +51,13 @@ const Portfolio = () => {
 						))}
 					</ul>
 				</div>
+				<h3 className={styles.portfolio__warning_hosting}>Тариф хостинга на render.com бесплатный. Поэтому сайты могут грузиться не быстро :(</h3>
 				{!isMobile && (
 					<ul className={styles.portfolio__list}>
-						{portfolioTab1 && (
+						{portfolioTab && (
 							<PortfolioTabContent tabItems={portfolioItems1} />
 						)}
-						{portfolioTab2 && (
+						{/* {portfolioTab2 && (
 							<PortfolioTabContent tabItems={portfolioItems2} />
 						)}
 						{portfolioTab3 && (
@@ -112,17 +65,17 @@ const Portfolio = () => {
 						)}
 						{portfolioTab4 && (
 							<PortfolioTabContent tabItems={portfolioItems4} />
-						)}
-						<AnimatePresence>
+						)} */}
+						{/* <AnimatePresence>
 							{hiddenPortfolioItems && (
 								<PortfolioTabContent
 									tabItems={hiddenPortfolioItemsArray}
 								/>
 							)}
-						</AnimatePresence>
+						</AnimatePresence> */}
 					</ul>
 				)}
-				{!isMobile && (
+				{/* {!isMobile && (
 					<div className={styles.portfolio__wrapper}>
 						<button
 							className={styles.portfolio__more}
@@ -136,15 +89,15 @@ const Portfolio = () => {
 							<span className={styles.portfolio__more__border} />
 						</button>
 					</div>
-				)}
+				)} */}
 			</div>
 			{isMobile && (
 				<div className={styles.portfolio__list__mobile}>
 					<div className={styles.portfolio__list__mobile__container}>
-						{portfolioTab1 && (
+						{portfolioTab && (
 							<PortfolioSlider tabItems={portfolioItems1} />
 						)}
-						{portfolioTab2 && (
+						{/* {portfolioTab2 && (
 							<PortfolioSlider tabItems={portfolioItems2} />
 						)}
 						{portfolioTab3 && (
@@ -152,7 +105,7 @@ const Portfolio = () => {
 						)}
 						{portfolioTab4 && (
 							<PortfolioSlider tabItems={portfolioItems4} />
-						)}
+						)} */}
 					</div>
 				</div>
 			)}

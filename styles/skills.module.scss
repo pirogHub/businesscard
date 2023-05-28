@@ -11,7 +11,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        padding-top: 52px;
+        // padding-top: 52px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -22,7 +22,7 @@
             "three three";
 
         @media all and (max-width: 1080px) {
-            padding-top: 48px;
+            padding-top: 12px;
         }
 
         @media all and (max-width: 800px) {
