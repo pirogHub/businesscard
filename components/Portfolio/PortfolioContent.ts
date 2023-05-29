@@ -1,18 +1,7 @@
 export const portfolioItems1 = [
+
 	{
 		id: 1,
-		img: "/img_porfolio/ya-app2.webp",
-		link: "https://ya-app.onrender.com",
-		title: "Яндекс-Недвижимость | Миникопия",
-		lang: "JavaScript",
-		description: [
-			{ title: "Сервер", points: ["express", "accessToken"] },
-			{ title: "Клиент", points: ["React", "Redux", "Yandex-react-maps", "reCharts", "select'ы, валидация, формы - кастомные", "Cookies"] },
-			{ title: "Database", points: ["mongoDb"] },
-		]
-	},
-	{
-		id: 2,
 		img: "/img_porfolio/online-cinema.webp",
 		link: "https://cinema-client-01df.onrender.com",
 		title: "Онлайн кинотеатр",
@@ -20,6 +9,18 @@ export const portfolioItems1 = [
 		description: [
 			{ title: "Сервер", points: ["Nestjs", "accessToken", "Доступ по ролям"] },
 			{ title: "Клиент", points: ["Видеоплеер", "Доступ по ролям", "Редактирование фильмов Администратором", "Nextjs", "Redux", "frammer-motion", "useQuery"] },
+			{ title: "Database", points: ["mongoDb"] },
+		]
+	},
+	{
+		id: 2,
+		img: "/img_porfolio/ya-app2.webp",
+		link: "https://ya-app.onrender.com",
+		title: "Яндекс-Недвижимость | Миникопия",
+		lang: "JavaScript",
+		description: [
+			{ title: "Сервер", points: ["express", "accessToken"] },
+			{ title: "Клиент", points: ["React", "Redux", "Yandex-react-maps", "reCharts", "select'ы, валидация, формы - кастомные"] },
 			{ title: "Database", points: ["mongoDb"] },
 		]
 	},
