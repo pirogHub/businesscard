@@ -5,7 +5,7 @@ import PortfolioSliderItem from "./PortfolioSliderItem"
 import {useMediaQuery} from "../../hooks/index"
 import PortfolioTabItem from "./PortfolioTabItem"
 import { IDescriptionItem } from "./types"
-
+// import "../../styles/slider.scss"
 interface IPortfolioSlider {
 	tabItems: {
 		id: number

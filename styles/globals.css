@@ -411,3 +411,33 @@ a {
 		transform: translate3d(77vw, 95vh, 0);
 	}
 }
+
+.carousel.carousel-slider {
+	min-height:570px;
+
+	@media all and (max-width: 1000px) {
+		min-height: 560px!important;
+    }
+	@media all and (max-width: 800px) {
+		min-height: 540px!important;
+    }
+
+    @media all and (max-width: 640px) {
+        min-height: 590px!important;
+    }
+
+    @media all and (max-width: 485px) {
+        min-height: 560px!important;
+    }
+
+    @media all and (max-width: 415px) {
+        min-height: 580px!important;
+    }
+   
+	@media all and (max-width: 350px){
+		min-height: 580px!important;
+	}
+	@media all and (max-width: 320px){
+		min-height: 570px!important;
+	}
+}

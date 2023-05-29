@@ -322,7 +322,7 @@
         border-radius: 4px;
         overflow: hidden;
         width: calc(100% - 24px);
-        max-height: 520px;
+        max-height: 550px;
 
         @media all and (max-width: 800px) {
             width: calc(100% - 13px);
@@ -374,33 +374,38 @@
     background-image: url("/img/bg-2.jpg");
     z-index: -1;
 
+    @media all and (max-width: 1000px) {
+        /* padding-top: 107px; */
+        height: 870px;
+    }
+
     @media all and (max-width: 800px) {
         /* padding-top: 107px; */
-        height: 740px;
+        height: 800px;
     }
 
     @media all and (max-width: 640px) {
-        height: 760px;
+        height: 870px;
         /* padding-top: 107px; */
     }
 
     @media all and (max-width: 485px) {
-        height: 790px;
+        height: 860px;
         /* padding-top: 107px; */
     }
 
     @media all and (max-width: 415px) {
-        height: 810px;
+        height: 880px;
         /* padding-top: 107px; */
     }
 
     @media all and (max-width: 380px) {
-        height: 820px;
+        height: 880px;
         /* padding-top: 107px; */
     }
 
     @media all and (max-width: 350px) {
-        height: 820px;
+        height: 880px;
         /* padding-top: 107px; */
     }
 }
