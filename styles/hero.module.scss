@@ -23,7 +23,12 @@
 
 
     @media all and (max-width: 405px) {
-        height: 520px;
+        height: 530px;
+        /* padding-top: 107px; */
+    }
+
+    @media all and (max-width: 320px) {
+        height: 620px;
         /* padding-top: 107px; */
     }
 
@@ -141,6 +146,13 @@
             background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #06a015da 0%, #067527e5 56.36%);
 
         }
+
+        @media all and (max-width: 300px) {
+            font-size: 13px;
+            padding: 8px 17px;
+            background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #06a015da 0%, #067527e5 56.36%);
+
+        }
     }
 
     &__arrow {
@@ -191,7 +203,12 @@
     }
 
     @media all and (max-width: 405px) {
-        height: 500px;
+        height: 520px;
+        /* padding-top: 107px; */
+    }
+
+    @media all and (max-width: 320px) {
+        height: 600px;
         /* padding-top: 107px; */
     }
 }

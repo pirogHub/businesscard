@@ -51,7 +51,7 @@ const Portfolio = () => {
 						))}
 					</ul>
 				</div>
-				<h3 className={styles.portfolio__warning_hosting}>Тариф хостинга на render.com бесплатный. Поэтому сайты могут грузиться не быстро :(</h3>
+				<h3 className={styles.portfolio__warning_hosting}>Тариф хостинга на render.com бесплатный. Поэтому сайты могут грузиться не быстро</h3>
 				{!isMobile && (
 					<ul className={styles.portfolio__list}>
 						{portfolioTab && (

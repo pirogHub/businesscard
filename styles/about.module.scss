@@ -42,19 +42,31 @@
 
     @media all and (max-width:630px) {
         flex-direction: column;
-        height: 1000px;
+        height: 1020px;
     }
 
     @media all and (max-width:485px) {
         padding-top: 0px;
         padding-bottom: 22px;
-        height: 800px;
+        height: 920px;
+    }
+
+    @media all and (max-width:445px) {
+        padding-top: 0px;
+        padding-bottom: 22px;
+        height: 870px;
     }
 
     @media all and (max-width:400px) {
         padding-top: 0px;
         padding-bottom: 22px;
-        height: 700px;
+        height: 830px;
+    }
+
+    @media all and (max-width:400px) {
+        padding-top: 0px;
+        padding-bottom: 22px;
+        height: 830px;
     }
 
 

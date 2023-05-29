@@ -8,6 +8,10 @@
     &_wrapper {
         display: flex;
         gap: 10px;
+
+        @media all and (max-width: 400px) {
+            display: block;
+        }
     }
 
     &__title {
@@ -22,10 +26,12 @@
         // padding-left: 10px;
         gap: 5px;
         flex-wrap: wrap;
+        justify-content: flex-start;
 
         &__item {
             color: #d1d0d0;
             list-style-type: none;
+            text-align: start;
 
             &__content::before {
                 text-align: center;
@@ -370,26 +376,31 @@
 
     @media all and (max-width: 800px) {
         /* padding-top: 107px; */
-        height: 480px;
+        height: 740px;
+    }
+
+    @media all and (max-width: 640px) {
+        height: 760px;
+        /* padding-top: 107px; */
     }
 
     @media all and (max-width: 485px) {
-        height: 500px;
+        height: 790px;
         /* padding-top: 107px; */
     }
 
     @media all and (max-width: 415px) {
-        height: 457px;
+        height: 810px;
         /* padding-top: 107px; */
     }
 
     @media all and (max-width: 380px) {
-        height: 440px;
+        height: 820px;
         /* padding-top: 107px; */
     }
 
     @media all and (max-width: 350px) {
-        height: 420px;
+        height: 820px;
         /* padding-top: 107px; */
     }
 }

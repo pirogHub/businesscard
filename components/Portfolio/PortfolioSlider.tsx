@@ -36,6 +36,7 @@ const PortfolioSlider = ({tabItems}: IPortfolioSlider) => {
 				centerSlidePercentage={
 					isMobile485 ? 75.4 : isMobile800 ? 49.4 : 45
 				}
+	
 			>
 				{tabItems.map((item) => (
 					<PortfolioSliderItem
