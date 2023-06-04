@@ -18,31 +18,31 @@ const Hero = () => {
 			opacity: 1,
 		})
 
-		// const doRandom = () => {
-		// 	gsap.timeline()
-		// 		.to(heroTitle.current, {
-		// 			duration: 3,
-		// 			opacity: function () {
-		// 				return gsap.utils.random(0.7, 0.75)
-		// 			},
-		// 			delay: function () {
-		// 				return gsap.utils.random(0.05, 0.3)
-		// 			},
-		// 		})
-		// 		.to(heroTitle.current, {
-		// 			duration: 0.5,
-		// 			opacity: 0.7,
-		// 			onComplete: function () {
-		// 				doRandom()
-		// 			},
-		// 		})
-		// }
-		// const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+		const doRandom = () => {
+			gsap.timeline()
+				.to(heroTitle.current, {
+					duration: 3,
+					opacity: function () {
+						return gsap.utils.random(0.7, 0.75)
+					},
+					delay: function () {
+						return gsap.utils.random(0.05, 0.3)
+					},
+				})
+				.to(heroTitle.current, {
+					duration: 0.5,
+					opacity: 0.7,
+					onComplete: function () {
+						doRandom()
+					},
+				})
+		}
+		const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
 
-		// if (!mediaQuery || !mediaQuery.matches) {
-		// 	colors.play()
-		// 	doRandom()
-		// }
+		if (!mediaQuery || !mediaQuery.matches) {
+			colors.play()
+			doRandom()
+		}
 	}, [])
 
 	return (
