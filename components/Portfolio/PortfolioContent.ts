@@ -1,5 +1,16 @@
 export const portfolioItems1 = [
-
+	{
+		id: 0,
+		img: "/img_porfolio/rutube2.webp",
+		link: "https://videohosting-client.onrender.com",
+		title: "Видео хостинг",
+		lang: "TypeScript",
+		description: [
+			{ title: "Сервер", points: ["Nestjs", "accessToken", "TypeOrm", "Доступ по ролям"] },
+			{ title: "Клиент", points: ["CreateApi", "Видеоплеер", "Сервис комментариев", "Доступ по ролям", "Nextjs", "Redux", "Tailwind"] },
+			{ title: "Database", points: ["PostgreSQL"] },
+		]
+	},
 	{
 		id: 1,
 		img: "/img_porfolio/online-cinema.webp",
