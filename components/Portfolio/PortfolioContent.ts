@@ -7,7 +7,7 @@ export const portfolioItems1 = [
 		lang: "TypeScript",
 		description: [
 			{ title: "Сервер", points: ["Nestjs", "accessToken", "TypeOrm", "Доступ по ролям"] },
-			{ title: "Клиент", points: ["CreateApi", "Видеоплеер", "Сервис комментариев", "Доступ по ролям", "Nextjs", "Redux", "Tailwind"] },
+			{ title: "Клиент", points: ["CreateApi", "Сервис комментариев", "Сервис подписки на канал", "Загрузка и редактирование видео", "Видеоплеер", "Доступ по ролям", "Nextjs", "Redux", "Tailwind"] },
 			{ title: "Database", points: ["PostgreSQL"] },
 		]
 	},

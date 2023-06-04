@@ -16,7 +16,7 @@ const About = () => {
 				<img
 					className={styles.about__img}
 					alt="avatar"
-					src="img/photo-good.jpg"
+					src="img/photo-good.png"
 				/> 
 				<div className={styles.about__inner}>
 					<h3 className={styles.about__title}>
